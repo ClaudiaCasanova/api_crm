@@ -9,7 +9,7 @@ const Inicio = () => {
     useEffect(() => { //Para consultar una API una vez que el componente esté listo
         const obtenerClientesAPI = async () => {
             try {
-                const url = 'http://localhost:4000/clientes'
+                const url = import.meta.env.VITE_API_URL
                 const respuesta = await fetch(url)
                 const resultado = await respuesta.json()
 
@@ -28,7 +28,7 @@ const Inicio = () => {
         const confirmar = confirm('¿Eliminar este cliente?')
         if (confirmar) {
             try {
-                const url = `http://localhost:4000/clientes/${id}`;
+                const url = `${import.meta.env.VITE_API_URL}/${id}`;
                 const respuesta = await fetch(url, {
                     method: 'DELETE'
                 })
@@ -45,7 +45,7 @@ const Inicio = () => {
 
     return (
         <>
-            <h1 className='font-black text-4xl text-gray-900'>Clientes</h1>
+            <h1 className='font-black text-4xl text-gray-800'>Clientes</h1>
             <p className='mt-3'>Administra tus clientes</p>
 
             <table className='w-full mt-5 table-auto shadow bg-white rounded-md'>

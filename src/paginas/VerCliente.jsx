@@ -11,7 +11,7 @@ const VerCliente = () => {
     useEffect(() => {
         const obtenerClienteAPI = async () => {
             try {
-                const url = `http://localhost:4000/clientes/${id}`;
+                const url = `${import.meta.env.VITE_API_URL}/${id}`;
                 const respuesta = await fetch(url);
                 const resultado = await respuesta.json()
                 setCliente(resultado);
@@ -29,7 +29,7 @@ const VerCliente = () => {
     return (
         cargando ? <Spinner /> : Object.keys(cliente).length === 0 ? <p>No hay resultados</p> : (
             <div className="bg-white mt-10 px-5 py-10 rounded-md shadow-md md:w-3/4 mx-auto">
-                <h1 className='font-black text-4xl text-gray-900'>Información de cliente</h1>
+                <h1 className='font-black text-4xl text-gray-800'>Información de cliente</h1>
                 <p className='text-2xl mt-10'>
                     {cliente.nombre}
                 </p>

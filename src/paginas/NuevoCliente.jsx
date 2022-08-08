@@ -3,7 +3,7 @@ import Formulario from '../components/Formulario'
 const NuevoCliente = () => {
     return (
         <>
-            <h1 className='font-black text-4xl text-gray-900'>Nuevo Cliente</h1>
+            <h1 className='font-black text-4xl text-gray-800'>Nuevo Cliente</h1>
             <p className='mt-3'>Rellena los siguientes campos para registrar un cliente</p>
 
             <Formulario />

@@ -11,7 +11,7 @@ const EditarCliente = () => {
     useEffect(() => {
         const obtenerClienteAPI = async () => {
             try {
-                const url = `http://localhost:4000/clientes/${id}`;
+                const url = `${import.meta.env.VITE_API_URL}/${id}`;
                 const respuesta = await fetch(url);
                 const resultado = await respuesta.json()
                 setCliente(resultado);
@@ -28,7 +28,7 @@ const EditarCliente = () => {
 
     return (
         <>
-            <h1 className='font-black text-4xl text-gray-900'>Editar Cliente</h1>
+            <h1 className='font-black text-4xl text-gray-800'>Editar Cliente</h1>
             <p className='mt-3'>Utiliza este formulario para editar los datos del cliente</p>
 
             {cliente?.nombre ? (
