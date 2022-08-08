@@ -1,0 +1,68 @@
+{
+  "clientes": [
+    {
+      "nombre": "Claudia",
+      "empresa": "Inetum",
+      "email": "cocotaloco@gmail.com",
+      "telefono": "673368985",
+      "notas": "",
+      "id": 1
+    },
+    {
+      "nombre": "Claudia",
+      "empresa": "GFI",
+      "email": "cocotaloco@gmail.com",
+      "telefono": "673368985",
+      "notas": "",
+      "id": 2
+    },
+    {
+      "nombre": "Claudia",
+      "empresa": "GFI",
+      "email": "cocotaloco@gmail.com",
+      "telefono": "673368985",
+      "notas": "",
+      "id": 3
+    },
+    {
+      "nombre": "Claudia",
+      "empresa": "GFI",
+      "email": "cocotaloco@gmail.com",
+      "telefono": "673368985",
+      "notas": "",
+      "id": 4
+    },
+    {
+      "nombre": "Jose Fernando",
+      "empresa": "Job and talent",
+      "email": "josefergarpa@gmail.com",
+      "telefono": "673368985",
+      "notas": "",
+      "id": 5
+    },
+    {
+      "nombre": "Claudia Sin TLf",
+      "empresa": "GFI",
+      "email": "cocotaloco@gmail.com",
+      "telefono": "",
+      "notas": "fdfdsa",
+      "id": 6
+    },
+    {
+      "nombre": "Buenas tardes",
+      "empresa": "Santi SL",
+      "email": "scebrian@ossian.tech",
+      "telefono": "666666666",
+      "notas": "Montane un servidor anda, no me trabajes con Jsons y subelo a un repositorio que luego pasa lo que pasa",
+      "id": 7
+    },
+    {
+      "nombre": "Edgar",
+      "empresa": "Codigo con Juan",
+      "email": "correo@gmail.com",
+      "telefono": "4921421",
+      "notas": "",
+      "id": 8
+    }
+  ]
+}
